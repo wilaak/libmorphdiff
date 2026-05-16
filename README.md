@@ -1,6 +1,6 @@
 # libmorphdiff
 
-> Some testing for now; not meant to be used in its current state
+Just some testing for now; not meant to be used in its current state.
 
 Diffs two HTML buffers and emits the minimal patches needed to morph a live DOM into the new state. Made for Datastar workloads with very high re-render rates to reduce client side load, pairs well with Brotli/Zstd or can even replace it in some cases.
 
