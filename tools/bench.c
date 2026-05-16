@@ -1,6 +1,6 @@
 #define _POSIX_C_SOURCE 199309L
 
-#include "morph_diff.h"
+#include "morphdiff.h"
 
 #include <stdio.h>
 #include <stdlib.h>

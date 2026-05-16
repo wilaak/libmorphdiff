@@ -1,5 +1,5 @@
 #include "internal.h"
-#include "morph_diff.h"
+#include "morphdiff.h"
 
 #include <assert.h>
 #include <stdlib.h>

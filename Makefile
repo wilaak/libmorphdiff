@@ -9,7 +9,7 @@ LIB_SRC = $(wildcard src/*.c)
 LIB_OBJ = $(LIB_SRC:src/%.c=$(BUILD)/%.o)
 LIB     = $(BUILD)/libmorphdiff.a
 
-HEADERS = include/morph_diff.h src/internal.h
+HEADERS = include/morphdiff.h src/internal.h
 
 all: $(BUILD)/demo
 

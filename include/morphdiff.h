@@ -1,4 +1,4 @@
-// HTML morph-diff
+// libmorphdiff: HTML morph-diff library.
 //
 // Compares two HTML buffers and returns the (selector, html) byte spans
 // needed to reconcile a live DOM via a client-side morph.
@@ -6,8 +6,8 @@
 // Sizes bounded by UINT32_MAX. Caller's new_html must outlive the result;
 // op.html_off indexes into it.
 
-#ifndef MORPH_DIFF_H
-#define MORPH_DIFF_H
+#ifndef MORPHDIFF_H
+#define MORPHDIFF_H
 
 #include <stddef.h>
 #include <stdint.h>
@@ -41,4 +41,4 @@ mdf_view *mdf_view_new(const char *html, size_t len);
 mdf_diff mdf_view_update(mdf_view *v, const char *new_html, size_t new_len);
 void mdf_view_free(mdf_view *v);
 
-#endif  // MORPH_DIFF_H
+#endif  // MORPHDIFF_H

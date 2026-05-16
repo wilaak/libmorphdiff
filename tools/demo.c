@@ -1,4 +1,4 @@
-#include "morph_diff.h"
+#include "morphdiff.h"
 
 #include <stdio.h>
 #include <stdlib.h>

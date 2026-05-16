@@ -1,4 +1,4 @@
-# morph-diff
+# libmorphdiff
 
 > Some testing for now; not meant to be used in its current state
 
@@ -7,7 +7,7 @@ Diffs two HTML buffers and emits the minimal patches needed to morph a live DOM 
 ## Usage
 
 ```c
-#include "morph_diff.h"
+#include "morphdiff.h"
 
 //
 // One-shot comparison
