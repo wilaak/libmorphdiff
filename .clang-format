@@ -1,0 +1,77 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+Standard: c++03
+
+# Indentation
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+IndentCaseLabels: true
+IndentGotoLabels: false
+IndentPPDirectives: AfterHash
+
+# Line length: generous so the formatter doesn't squeeze logic onto one line.
+ColumnLimit: 100
+
+# Braces: Linux-style. Same line for control flow, next line for functions.
+BreakBeforeBraces: Linux
+
+# Spacing: lean toward more whitespace for readability.
+SpaceBeforeParens: ControlStatements
+SpaceAfterCStyleCast: true
+SpaceAfterLogicalNot: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+SpacesInCStyleCastParentheses: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeRangeBasedForLoopColon: true
+
+# Pointer alignment: `int *p` reads more naturally than `int* p` in C.
+PointerAlignment: Right
+DerivePointerAlignment: false
+
+# Never collapse short constructs onto one line; keeps logic scannable.
+AllowShortBlocksOnASingleLine: Never
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+
+# Always brace single-statement bodies (clang-format 15+)
+InsertBraces: true
+
+# Function signatures: keep arguments readable.
+AlignAfterOpenBracket: Align
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: false
+BinPackArguments: false
+BinPackParameters: false
+AlwaysBreakAfterReturnType: None
+
+# Alignment: line things up so structure is visible at a glance.
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignConsecutiveMacros: AcrossEmptyLines
+AlignEscapedNewlines: Left
+AlignOperands: Align
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 1
+
+# Includes: keep author-chosen groupings; only sort within a block.
+SortIncludes: CaseSensitive
+IncludeBlocks: Preserve
+
+# Comments
+ReflowComments: true
+SpacesBeforeTrailingComments: 2
+SpacesInLineCommentPrefix:
+  Minimum: 1
+  Maximum: 1
+CommentPragmas: '^ IWYU pragma:'
+
+# Misc
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 1

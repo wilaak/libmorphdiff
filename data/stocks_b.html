@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head><title>Market Watch</title></head>
+<body>
+  <header id="page-header">
+    <h1>Market Watch</h1>
+    <p id="timestamp">Snapshot at 14:32:18 ET</p>
+    <ul id="indices">
+      <li id="SPX">S&amp;P 500: 5314.21 <span>+12.84 (+0.24%)</span></li>
+      <li id="DJI">Dow: 41209.18 <span>-48.21 (-0.12%)</span></li>
+      <li id="NDX">Nasdaq 100: 18742.92 <span>+92.41 (+0.50%)</span></li>
+      <li id="RUT">Russell 2000: 2148.55 <span>+5.18 (+0.24%)</span></li>
+      <li id="VIX">VIX: 14.21 <span>-0.42 (-2.87%)</span></li>
+    </ul>
+  </header>
+  <main id="quotes">
+    <table id="quote-table">
+      <thead>
+        <tr>
+          <th>Ticker</th><th>Name</th><th>Price</th><th>Change</th><th>%</th><th>Volume</th><th>Day Low</th><th>Day High</th>
+        </tr>
+      </thead>
+      <tbody id="quote-rows">
+      <tr id="AAPL"><td>AAPL</td><td>Apple Inc.</td><td>214.90</td><td>+1.57</td><td>+0.74%</td><td>52525400</td><td>213.10</td><td>215.45</td></tr>
+      <tr id="MSFT"><td>MSFT</td><td>Microsoft Corp.</td><td>431.22</td><td>-2.18</td><td>-0.50%</td><td>28129400</td><td>429.50</td><td>434.10</td></tr>
+      <tr id="GOOGL"><td>GOOGL</td><td>Alphabet Inc. Class A</td><td>178.45</td><td>+0.92</td><td>+0.52%</td><td>21048300</td><td>177.20</td><td>179.10</td></tr>
+      <tr id="AMZN"><td>AMZN</td><td>Amazon.com Inc.</td><td>185.49</td><td>+2.22</td><td>+1.21%</td><td>41630900</td><td>183.40</td><td>187.05</td></tr>
+      <tr id="META"><td>META</td><td>Meta Platforms Inc.</td><td>506.78</td><td>-1.45</td><td>-0.29%</td><td>14820100</td><td>504.20</td><td>510.30</td></tr>
+      <tr id="TSLA"><td>TSLA</td><td>Tesla Inc.</td><td>249.83</td><td>+7.58</td><td>+3.13%</td><td>90530800</td><td>241.10</td><td>249.83</td></tr>
+      <tr id="NVDA"><td>NVDA</td><td>NVIDIA Corp.</td><td>925.59</td><td>+11.00</td><td>+1.20%</td><td>40140900</td><td>911.80</td><td>930.20</td></tr>
+      <tr id="BRK.B"><td>BRK.B</td><td>Berkshire Hathaway Inc. Cl B</td><td>419.07</td><td>+0.21</td><td>+0.05%</td><td>3128400</td><td>418.00</td><td>420.55</td></tr>
+      <tr id="JPM"><td>JPM</td><td>JPMorgan Chase & Co.</td><td>198.74</td><td>-0.84</td><td>-0.42%</td><td>8245100</td><td>197.20</td><td>200.10</td></tr>
+      <tr id="V"><td>V</td><td>Visa Inc.</td><td>279.55</td><td>+1.12</td><td>+0.40%</td><td>5621300</td><td>278.00</td><td>280.40</td></tr>
+      <tr id="UNH"><td>UNH</td><td>UnitedHealth Group Inc.</td><td>512.18</td><td>-3.42</td><td>-0.66%</td><td>2914200</td><td>510.00</td><td>517.30</td></tr>
+      <tr id="WMT"><td>WMT</td><td>Walmart Inc.</td><td>66.58</td><td>+0.73</td><td>+1.11%</td><td>18693900</td><td>65.80</td><td>66.95</td></tr>
+      <tr id="XOM"><td>XOM</td><td>Exxon Mobil Corp.</td><td>108.92</td><td>+0.43</td><td>+0.40%</td><td>12041800</td><td>107.80</td><td>109.55</td></tr>
+      <tr id="MA"><td>MA</td><td>Mastercard Inc.</td><td>459.30</td><td>+2.17</td><td>+0.47%</td><td>2912500</td><td>456.20</td><td>460.80</td></tr>
+      <tr id="PG"><td>PG</td><td>Procter & Gamble Co.</td><td>165.21</td><td>-0.31</td><td>-0.19%</td><td>6128400</td><td>164.80</td><td>166.20</td></tr>
+      <tr id="HD"><td>HD</td><td>Home Depot Inc.</td><td>335.42</td><td>+1.84</td><td>+0.55%</td><td>3014700</td><td>333.00</td><td>336.50</td></tr>
+      <tr id="COST"><td>COST</td><td>Costco Wholesale Corp.</td><td>812.55</td><td>+4.20</td><td>+0.52%</td><td>1842100</td><td>806.40</td><td>815.10</td></tr>
+      <tr id="JNJ"><td>JNJ</td><td>Johnson & Johnson</td><td>152.18</td><td>-0.62</td><td>-0.41%</td><td>6520300</td><td>151.50</td><td>153.40</td></tr>
+      <tr id="ABBV"><td>ABBV</td><td>AbbVie Inc.</td><td>168.40</td><td>+0.78</td><td>+0.47%</td><td>4912800</td><td>167.20</td><td>169.00</td></tr>
+      <tr id="BAC"><td>BAC</td><td>Bank of America Corp.</td><td>39.75</td><td>+0.07</td><td>+0.18%</td><td>32627200</td><td>39.55</td><td>40.05</td></tr>
+      <tr id="CRM"><td>CRM</td><td>Salesforce Inc.</td><td>275.18</td><td>-1.92</td><td>-0.69%</td><td>4128700</td><td>273.80</td><td>278.30</td></tr>
+      <tr id="AVGO"><td>AVGO</td><td>Broadcom Inc.</td><td>1342.55</td><td>+12.04</td><td>+0.90%</td><td>1842300</td><td>1325.00</td><td>1350.20</td></tr>
+      <tr id="NFLX"><td>NFLX</td><td>Netflix Inc.</td><td>652.84</td><td>+3.21</td><td>+0.49%</td><td>2841200</td><td>648.10</td><td>656.40</td></tr>
+      <tr id="AMD"><td>AMD</td><td>Advanced Micro Devices</td><td>168.84</td><td>+3.10</td><td>+1.87%</td><td>43045900</td><td>165.20</td><td>169.40</td></tr>
+      <tr id="PEP"><td>PEP</td><td>PepsiCo Inc.</td><td>169.31</td><td>-0.45</td><td>-0.27%</td><td>4128900</td><td>168.80</td><td>170.20</td></tr>
+      <tr id="ADBE"><td>ADBE</td><td>Adobe Inc.</td><td>482.10</td><td>+1.62</td><td>+0.34%</td><td>2812400</td><td>478.50</td><td>484.30</td></tr>
+      <tr id="KO"><td>KO</td><td>Coca-Cola Co.</td><td>62.14</td><td>+0.18</td><td>+0.29%</td><td>12914800</td><td>61.80</td><td>62.45</td></tr>
+      <tr id="TMO"><td>TMO</td><td>Thermo Fisher Scientific</td><td>564.20</td><td>-2.41</td><td>-0.43%</td><td>1142800</td><td>562.00</td><td>568.50</td></tr>
+      <tr id="CSCO"><td>CSCO</td><td>Cisco Systems Inc.</td><td>47.92</td><td>+0.21</td><td>+0.44%</td><td>18412300</td><td>47.55</td><td>48.10</td></tr>
+      <tr id="ACN"><td>ACN</td><td>Accenture plc</td><td>298.55</td><td>-1.18</td><td>-0.39%</td><td>1812400</td><td>297.30</td><td>301.00</td></tr>
+      <tr id="DIS"><td>DIS</td><td>Walt Disney Co.</td><td>102.40</td><td>+0.94</td><td>+0.93%</td><td>9128700</td><td>101.20</td><td>103.15</td></tr>
+      <tr id="MRK"><td>MRK</td><td>Merck & Co.</td><td>128.72</td><td>-0.38</td><td>-0.29%</td><td>7140200</td><td>128.00</td><td>129.40</td></tr>
+      <tr id="ABT"><td>ABT</td><td>Abbott Laboratories</td><td>108.30</td><td>+0.27</td><td>+0.25%</td><td>4912800</td><td>107.80</td><td>108.95</td></tr>
+      <tr id="VZ"><td>VZ</td><td>Verizon Communications</td><td>41.18</td><td>+0.08</td><td>+0.19%</td><td>14014800</td><td>40.95</td><td>41.40</td></tr>
+      <tr id="NKE"><td>NKE</td><td>Nike Inc. Class B</td><td>89.42</td><td>-1.05</td><td>-1.16%</td><td>6412900</td><td>88.80</td><td>91.20</td></tr>
+      <tr id="INTC"><td>INTC</td><td>Intel Corp.</td><td>29.72</td><td>+0.22</td><td>+0.75%</td><td>42129700</td><td>29.30</td><td>30.15</td></tr>
+      <tr id="PFE"><td>PFE</td><td>Pfizer Inc.</td><td>27.92</td><td>-0.18</td><td>-0.64%</td><td>28412800</td><td>27.70</td><td>28.20</td></tr>
+      <tr id="ORCL"><td>ORCL</td><td>Oracle Corp.</td><td>127.55</td><td>+1.42</td><td>+1.13%</td><td>8120400</td><td>125.80</td><td>128.30</td></tr>
+      <tr id="T"><td>T</td><td>AT&T Inc.</td><td>17.20</td><td>+0.05</td><td>+0.29%</td><td>32048700</td><td>17.05</td><td>17.35</td></tr>
+      <tr id="WFC"><td>WFC</td><td>Wells Fargo & Co.</td><td>60.18</td><td>+0.42</td><td>+0.70%</td><td>14820100</td><td>59.70</td><td>60.55</td></tr>
+      <tr id="LIN"><td>LIN</td><td>Linde plc</td><td>434.20</td><td>-1.85</td><td>-0.42%</td><td>1042400</td><td>432.00</td><td>437.50</td></tr>
+      <tr id="MCD"><td>MCD</td><td>McDonald's Corp.</td><td>268.42</td><td>-0.62</td><td>-0.23%</td><td>2412900</td><td>267.50</td><td>269.80</td></tr>
+      <tr id="PM"><td>PM</td><td>Philip Morris International</td><td>102.84</td><td>+0.55</td><td>+0.54%</td><td>4128400</td><td>102.00</td><td>103.20</td></tr>
+      <tr id="DHR"><td>DHR</td><td>Danaher Corp.</td><td>248.31</td><td>-1.04</td><td>-0.42%</td><td>1812400</td><td>247.00</td><td>250.10</td></tr>
+      <tr id="IBM"><td>IBM</td><td>International Business Machines</td><td>167.73</td><td>+0.59</td><td>+0.35%</td><td>3833800</td><td>166.80</td><td>168.30</td></tr>
+      <tr id="TXN"><td>TXN</td><td>Texas Instruments Inc.</td><td>198.55</td><td>+1.18</td><td>+0.60%</td><td>4128700</td><td>196.40</td><td>199.20</td></tr>
+      <tr id="GE"><td>GE</td><td>GE Aerospace</td><td>162.74</td><td>+2.42</td><td>+1.51%</td><td>3120400</td><td>159.80</td><td>163.50</td></tr>
+      <tr id="BA"><td>BA</td><td>Boeing Co.</td><td>175.20</td><td>-2.18</td><td>-1.23%</td><td>6412800</td><td>174.50</td><td>178.40</td></tr>
+      <tr id="CAT"><td>CAT</td><td>Caterpillar Inc.</td><td>348.92</td><td>+3.41</td><td>+0.99%</td><td>2012400</td><td>344.20</td><td>351.10</td></tr>
+      <tr id="GS"><td>GS</td><td>Goldman Sachs Group Inc.</td><td>493.13</td><td>+2.80</td><td>+0.57%</td><td>1927000</td><td>489.30</td><td>494.50</td></tr>
+      </tbody>
+    </table>
+  </main>
+  <aside id="recent-trades">
+    <h2>Recent Trades</h2>
+    <ol id="trade-log">
+      <li>AAPL  214.56  +1.23  500   14:32:18</li>
+      <li>MSFT  431.22  -2.18  120   14:32:17</li>
+      <li>TSLA  247.92  +5.67  2400  14:32:17</li>
+      <li>NVDA  923.14  +8.55  180   14:32:16</li>
+      <li>AMZN  186.31  +3.04  900   14:32:15</li>
+      <li>META  506.78  -1.45  340   14:32:14</li>
+      <li>GOOGL 178.45  +0.92  1100  14:32:14</li>
+      <li>JPM   198.74  -0.84  220   14:32:13</li>
+      <li>V     279.55  +1.12  480   14:32:12</li>
+      <li>BAC    39.82  +0.14  6200  14:32:11</li>
+      <li>AMD   167.92  +2.18  3100  14:32:10</li>
+      <li>INTC   29.84  +0.34  8400  14:32:09</li>
+      <li>T      17.20  +0.05  12000 14:32:08</li>
+      <li>PFE    27.92  -0.18  4200  14:32:07</li>
+      <li>WFC    60.18  +0.42  1900  14:32:06</li>
+    </ol>
+  </aside>
+  <footer id="status">
+    <p>Quotes refresh every 5 seconds. Source: simulated feed.</p>
+  </footer>
+</body>
+</html>
