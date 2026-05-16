@@ -4,6 +4,8 @@
 
 Diffs two HTML buffers and emits the minimal patches needed to morph a live DOM into the new state. Made for Datastar workloads with very high re-render rates to reduce client side load, pairs well with Brotli/Zstd or can even replace it in some cases.
 
+## Usage
+
 ```c
 #include "morph_diff.h"
 
@@ -67,3 +69,12 @@ include/ public header
 src/     library sources + internal.h
 tools/   demo, bench, tests
 ```
+
+## Fuzz
+
+```
+make fuzz-compare  # libFuzzer + ASan + UBSan over mdf_compare
+make fuzz-view     # same, over the streaming mdf_view API
+```
+
+Requires clang.

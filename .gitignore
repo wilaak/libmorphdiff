@@ -1,2 +1,4 @@
 /build/
 gmon.out
+/fuzz-corpus/
+/fuzz-findings/
